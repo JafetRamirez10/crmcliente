@@ -50,6 +50,7 @@ const Login=()=>{
 					guardarMensaje('Autenticando...');
 
 					const { token } = data.autenticarUsuario;
+					console.log(token);
 					localStorage.setItem('token',token);
 
 					setTimeout(()=>{
